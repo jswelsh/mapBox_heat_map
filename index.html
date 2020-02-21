@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title></title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css' rel='stylesheet' />
+
+    <!-- Note
+            Be sure to save and store the GeoJSON file in the same directory as your project. 
+            You will also need to run this application from a local web server, otherwise you 
+            will receive a Cross-origin Resource Sharing (CORS) error. Python's SimpleHTTPServer 
+            is included on many computers and is a good choice if this is your first time running a local server. -->
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+      }
+    </style>
+</head>
+<body>
+  <div id='map'></div>
+  <script type = "text/javascript" src = "script/index.js" ></script>
+</body>
+</html> 
