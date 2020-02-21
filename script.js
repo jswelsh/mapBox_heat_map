@@ -6,3 +6,10 @@ mapboxgl.accessToken = 'pk.eyJ1IjoianN3ZWxzaCIsImEiOiJjazFqdXczOHYyNWNxM25udDE4b
       zoom: 11
     });
     
+map.on('load', function() {
+    map.addSource('trees', {
+      type: 'geojson',
+      data: './trees.geojson'
+    });
+    
+});
